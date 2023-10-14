@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥰quieres salir conmigo🥰</title>
+    <style>
+    .body{
+        background-color: crimson;
+        text-align: center;   
+    }
+    .body__title{
+        color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 512px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">🥰quieres salir conmigo🥰</h1>
+  <img src="https://i.pinimg.com/564x/6e/58/b3/6e58b390e3aed777bf2a0f084366e29e.jpg" alt="Foto de flores" class="body__img" />
+  <br>
+  <button id="yes">🌚Si vamos🌚</button>
+  <button id="no">😭no paso😭</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    
+    
+    const  vamosasalir = () => {
+      alert('😍vamos a salir😍');
+      alert('😁te la pasaras bien 😁');
+      alert('😋ya lo veras😋');
+      location.href = 'https://youtu.be/S7gMzYqXIZc?si=Wpsn_FkgOJv8Q6P5=19';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', vamosasalir);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
